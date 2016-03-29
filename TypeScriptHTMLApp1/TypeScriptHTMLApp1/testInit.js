@@ -1,18 +1,18 @@
 ﻿function createAndRunUnitTests() {
     
-    connectQUnit();
-    createReportTable();
+    //connectQUnit();
+    //createReportTable();
     runUnitTests();
 
 }
 
 function runUnitTests() {
     //Create <script src="test.ts"></script>
-    var script1 = document.createElement("script");
-    script1.setAttribute("src", "test.ts");
-    script1.setAttribute("id", "scriptTest");
-    document.body.appendChild(script1);
-    $("#scriptTest").append(script1);
+    var test = document.createElement("script");
+    test.setAttribute("src", "test.ts");
+    test.setAttribute("id", "scriptTest");
+    document.head.appendChild(test);
+    $("#scriptTest").append(test);
     
     console.log("unit tests file was added ");
 }
