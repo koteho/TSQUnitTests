@@ -8,5 +8,5 @@ function doSomethingElse(): number {
 
     return result;
 }
-
+console.log("1 + 2 + 3 =");
 console.log(doSomething(1, 2, 3));

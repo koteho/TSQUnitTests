@@ -5,39 +5,20 @@
     <meta charset="utf-8" />
     <title>Your app is running. Open console to see the result.</title>
 
-    <link rel="stylesheet" href="Content/qunit-1.14.0.css">
-    <script src="Scripts/qunit-1.14.0.js"></script>
+    <!--<script src="Scripts/qunit-1.14.0.js"></script>
+    <link rel="stylesheet" href="Content/qunit-1.14.0.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="app.js"></script>
-    <script src="test.ts"></script>
+    <script src="testInit.js"></script>
+   
 </head>
 <body>
-    <h1>TypeScript HTML App</h1>
-    <div id="content"></div>
-    <div id="qunit"></div>
-    <div id="qunit-fixture"></div>
-    <div style="display: none;">
-        <table id="basic-sorting">
-            <thead>
-                <tr>
-                    <th>Col 1</th>
-                    <th>Col 2</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>1</td>
-                </tr>
-            </tbody>
-            </table>
-    </div>
+    <!--Dinamicly adding QUnit libs-->
+    <script>connectQUnit();</script>
+    <!--Dinamicly adding table for the report and runing unit tests-->
+    <script>createAndRunUnitTests();</script>
+     
+
+
 </body>
 </html>

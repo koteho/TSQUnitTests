@@ -27,6 +27,7 @@
     <Content Include="Content\qunit-1.14.0.css" />
     <Content Include="index.html" />
     <Content Include="Scripts\qunit-1.14.0.js" />
+    <Content Include="testInit.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
